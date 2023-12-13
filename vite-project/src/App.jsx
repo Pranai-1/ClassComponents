@@ -15,9 +15,7 @@ class MyComponent extends React.Component{
        
         
     }
-    setUsername(e) {
-        this.setState({ username: e.target.value });
-    }
+ 
     
     setPassword(e) {
         this.setState({ password: e.target.value });
