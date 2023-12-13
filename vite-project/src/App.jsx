@@ -15,8 +15,9 @@ class MyComponent extends React.Component{
        
         
     }
- 
-    
+    setUsername(e) {
+        this.setState({ username: e.target.value });
+    }
     setPassword(e) {
         this.setState({ password: e.target.value });
     }
@@ -26,9 +27,7 @@ class MyComponent extends React.Component{
         this.setState({todos:response})
         this.setState({loggedIn:true})
     })}
-
-    Helper(props){
-       
+    Helper(props){    
         return(
            <div className="table">
                <table>
